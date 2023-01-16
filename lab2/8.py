@@ -30,5 +30,3 @@ def date_diff(first_day, second_day):
     sum -= day_of_year(first_list[0], first_list[1], first_list[2])
     sum += day_of_year(second_list[0], second_list[1], second_list[2])
     return sum+1
-
-print(date_diff("1-1-2018", "1-1-2020"))
