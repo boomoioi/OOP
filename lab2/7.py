@@ -1,3 +1,4 @@
+day_in_month = [0,31,28,31,30,31,30,31,31,30,31,30,31]
 def is_leap(year):
     ans = 0
     if year % 400 == 0:
@@ -8,13 +9,10 @@ def is_leap(year):
 
 
 def day_of_year(day, month ,year):
-    month_day = [31,28,31,30,31,30,31,31,30,31,30,31]
     sum = 0 
     if is_leap(year):
-        month_day[1] = 29
-    for i in range(month-1):
-        sum += month_day[i]
+        day_in_month[2] = 29
+    for i in range(month):
+        sum += day_in_month[i]
     sum += day
     return sum
-
-print(day_of_year(1,1,2020))
