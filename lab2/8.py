@@ -9,7 +9,7 @@ def is_leap(year):
 
 def day_of_year(day, month ,year):
     sum = 0 
-    
+    day_in_month = [0, 31,28,31,30,31,30,31,31,30,31,30,31]
     if is_leap(year):
         day_in_month[2] = 29
 
