@@ -1,4 +1,4 @@
-def update_records(dictionary_record, id, property, value):
+def update_records(record, id, property, value):
     if value == '':
         del dictionary_record[id][property]
     elif property == 'tracks':
@@ -30,5 +30,3 @@ record_collection = {
         'albumTitle' : 'ABBA Gold'
     }
 }
-update_records(record_collection, 2548, 'tracks', 'abc')
-print(record_collection)
