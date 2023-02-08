@@ -10,4 +10,3 @@ def is_plusone_dictionary(d):
     return True
              
 
-print(is_plusone_dictionary({1:2, 3:10, 5:6, 7:8}))
